@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Philosopher', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); /* Градієнт */
+    color: white;
+    text-align: center;  
+    padding: 10px;
+    z-index: 1000;
+}
+
+.wrap {
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cm{
+    padding-right: 20px;
+}
+
+.nav-link:hover {
+    color: #00d4ff;
+}
+
+.main-content {
+    margin-top: 40px;
+}
+
+.me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.main-text{
+    flex: 1;
+}
+
+.h1Text{
+    color: white;
+    font-size: 2.5em;
+    line-height: 1.2;
+}
+
+.my-image{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.MyPhoto{
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+.textAboutMe{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titleAboutMe{
+    color: #00d4ff;
+    text-align: center;
+}
+
+.skills{
+    color: white;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.section-title{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00d4ff;
+}
+
+.skills-content{
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px){
+    .me{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .my-image{
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.logoMySkills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.Skills_logo{
+    width: 120px;
+    height: auto;
+}
+
+.HTML_logo{
+    width: 120px;
+    height: 120px;
+}
+
+.CSS_logo{
+    width: 90px;
+    height: 120px;
+    margin-left: 100px;
+}
+
+.VSCode_logo{
+    margin-left: 100px;
+}
+
+.Bootstrap_logo{
+    margin-left: 100px;
+}
+
+.GitHub_logo{
+    margin-left: 100px;
+}
+
+.MyProjects-title{
+    text-align: center;
+    margin-top: 100px;
+    color: #00d4ff;
+}
+
+.MyProjects_decripton{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.projectCard{
+    width: 367px;
+    height: 467px;
+    background-color: #978989;
+    border-radius: 25px;
+    margin-top: 90px;
+}
+
+.cardIMG1{
+    display: flex;
+    justify-content: start;
+    width: 367px;
+    height: 200px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.cardTitle{
+    color: #000000;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.openButton, .GitHubButton{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #00d4ff;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.openButton{
+    margin-left: 55px;
+}
+
+.openButton:hover, .GitHubButton:hover {
+    background-color: #007b8a;
+}
+
+.projectCard a{
+    text-align: center;
+    display: inline-block;
+}
+
+.descriptonOfproject{
+    padding: 20px;
+}
+
+.arrow{
+    width: 15px;
+    height: auto;
+    margin-left: 3px;
+}
+
+.gitHubLogoButton{
+    width: 15px;
+    height: auto;
+    margin-left: 3px;
+}
+
+ /* Друга карьточка */
+
+.projectCard{
+    width: 367px;
+    height: 467px;
+    background-color: #978989;
+    border-radius: 25px;
+    margin-top: 90px;
+}
+
+.projectCards{
+    display: flex;
+    justify-content: center; /* Вирівнює картки по центру */
+    gap: 20px;
+    flex-wrap: wrap;
+    /* margin-top: 20px; */
+}
+
+/* .projectCard3{
+    width: 367px;
+    height: 467px;
+    background-color: #978989;
+    border-radius: 25px;
+    margin-top: 90px;
+} */
+
+.dp3{
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+/* dp3 - descripton of project 3 */
+/* pc1, pc2, pc3 - project card 1, project card 2, project card 3 */
+
+.contactMeBlock{
+    display: flex;
+    width: 100%;
+    max-width: 1150px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.textBlock {
+    width: 40%;
+    text-align: center;
+}
+
+.textBlock h1 {
+    font-size: 3rem;
+    color: #00d4ff;
+    margin: 0;
+}
+
+.contactMe {
+    width: 55%;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, rgba(4,168,201,1) 0%, rgba(9,9,121,1) 50%, rgba(2,0,36,1) 100%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.inputBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input.email, textarea.message {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #00d4ff;
+    outline: none;
+    font-size: 1rem;
+}
+
+textarea.message {
+    height: 100px;
+    resize: none;
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #00d4ff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #008db3;
+}
+
+.submit:active {
+    background-color: #006c8c;
+}
+
+.footer{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.footer-text{
+    color: white;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 2px;
+    background-color: #000;
+    margin: 20px auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+.footer-text-left {
+  margin: 0;
+}
+
+.footer-links-right {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-link {
+  margin-right: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.gitLogo{
+    height: 50px;
+    width: auto;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.logoSocials{
+    height: 50px;
+    width: auto;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
